@@ -1,12 +1,24 @@
 import React, { useState, useEffect, useMemo } from "react";
 import axios from "axios";
+import { useHistory } from "react-router-dom";
 import Header from "../components/Header";
+import WeatherImage from "../components/WeatherImage";
 
 const weatherKey = `533b80186fdf8e8d8faa837ee7ada898`;
 
 function Home() {
+  const history = useHistory();
   const [weatherData, setWeatherData] = useState(null);
-  const [city, setCity] = useState(`Tokyo`);
+  const [city, setCity] = useState(`Shanghai`);
+
+  useEffect(() => {
+    const searchParams = history.location.search;
+    const urlParams = new URLSearchParams(searchParams);
+    const city = urlParams.get("city");
+    if (city) {
+      setCity(city);
+    }
+  }, [history.location.search]);
 
   useEffect(() => {
     axios
@@ -63,15 +75,34 @@ function Home() {
     <>
       <Header />
       <main className="Home">
-        <h2>Weather in {city}</h2>
+        <h2>
+          Weather in <span>{city}</span>
+        </h2>
         <div className="WeatherInfo">
-          <p>Weather Type: {weatherType}</p>
-          <p>Current Temperature: {currentTemp}</p>
-          <p>High Temperature: {highTemp}</p>
-          <p>Low Temperature: {lowTemp}</p>
-          <p>Cloudiness: {cloudiness}</p>
-          <p>Humidity: {humidity}</p>
-          <p>Wind Speed: {windSpeed}</p>
+          <div className="WeatherInfoBasic">
+            <div className="WeatherInfoImage">
+              <WeatherImage weatherType={weatherType} />
+            </div>
+            <p className="WeatherInfoType">{weatherType}</p>
+            <h3 className="Label">Current Temperature: </h3>
+            <p className="WeatherInfoTemp">{currentTemp}</p>
+          </div>
+          <div className="WeatherInfoPlus">
+            <div className="WeatherInfoColumn">
+              <h3 className="Label">High Temperature: </h3>
+              <p className="WeatherInfoTextSmall">{highTemp}</p>
+              <h3 className="Label">Low Temperature: </h3>
+              <p className="WeatherInfoTextSmall">{lowTemp}</p>
+            </div>
+            <div className="WeatherInfoColumn">
+              <h3 className="Label">Cloudiness: </h3>
+              <p className="WeatherInfoTextSmall">{cloudiness}</p>
+              <h3 className="Label">Humidity: </h3>
+              <p className="WeatherInfoTextSmall">{humidity}</p>
+              <h3 className="Label">Wind Speed: </h3>
+              <p className="WeatherInfoTextSmall">{windSpeed}</p>
+            </div>
+          </div>
         </div>
       </main>
     </>
