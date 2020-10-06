@@ -29,6 +29,7 @@ function Home() {
         setWeatherData(response.data);
       })
       .catch((error) => {
+        setCity(`Shanghai`);
         console.log(error);
       });
   }, [city]);
@@ -80,7 +81,12 @@ function Home() {
         </h2>
         <div className="WeatherInfo">
           <div className="WeatherInfoBasic">
-            <div className="WeatherInfoImage">
+            <div
+              className="WeatherInfoImage"
+              style={{
+                opacity: weatherType === "Loading..." ? "0" : "1",
+              }}
+            >
               <WeatherImage weatherType={weatherType} />
             </div>
             <p className="WeatherInfoType">{weatherType}</p>

@@ -37,6 +37,7 @@
 
 .WeatherInfoImage {
   font-size: 120px;
+  transition: 0.5s;
 }
 
 .WeatherInfo {

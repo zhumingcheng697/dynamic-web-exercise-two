@@ -13,8 +13,6 @@ import {
 
 function WeatherImage({ weatherType }) {
   switch (weatherType) {
-    case "Loading...":
-      return <></>;
     case "broken clouds":
       return <FontAwesomeIcon icon={faCloudSun} />;
     case "clear sky":
