@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/zhumingcheng697.github.io/dynamic-web-exercise-two/static/css/main.bbccf0c5.chunk.css",
-    "main.js": "/zhumingcheng697.github.io/dynamic-web-exercise-two/static/js/main.70db7741.chunk.js",
-    "main.js.map": "/zhumingcheng697.github.io/dynamic-web-exercise-two/static/js/main.70db7741.chunk.js.map",
-    "runtime-main.js": "/zhumingcheng697.github.io/dynamic-web-exercise-two/static/js/runtime-main.7ac565e3.js",
-    "runtime-main.js.map": "/zhumingcheng697.github.io/dynamic-web-exercise-two/static/js/runtime-main.7ac565e3.js.map",
-    "static/js/2.ad9a58ad.chunk.js": "/zhumingcheng697.github.io/dynamic-web-exercise-two/static/js/2.ad9a58ad.chunk.js",
-    "static/js/2.ad9a58ad.chunk.js.map": "/zhumingcheng697.github.io/dynamic-web-exercise-two/static/js/2.ad9a58ad.chunk.js.map",
-    "index.html": "/zhumingcheng697.github.io/dynamic-web-exercise-two/index.html",
-    "precache-manifest.4452b82ab27bc221c7832cd289535507.js": "/zhumingcheng697.github.io/dynamic-web-exercise-two/precache-manifest.4452b82ab27bc221c7832cd289535507.js",
-    "service-worker.js": "/zhumingcheng697.github.io/dynamic-web-exercise-two/service-worker.js",
-    "static/css/main.bbccf0c5.chunk.css.map": "/zhumingcheng697.github.io/dynamic-web-exercise-two/static/css/main.bbccf0c5.chunk.css.map",
-    "static/js/2.ad9a58ad.chunk.js.LICENSE.txt": "/zhumingcheng697.github.io/dynamic-web-exercise-two/static/js/2.ad9a58ad.chunk.js.LICENSE.txt"
+    "main.css": "/dynamic-web-exercise-two/static/css/main.bbccf0c5.chunk.css",
+    "main.js": "/dynamic-web-exercise-two/static/js/main.7d267201.chunk.js",
+    "main.js.map": "/dynamic-web-exercise-two/static/js/main.7d267201.chunk.js.map",
+    "runtime-main.js": "/dynamic-web-exercise-two/static/js/runtime-main.a6a516a5.js",
+    "runtime-main.js.map": "/dynamic-web-exercise-two/static/js/runtime-main.a6a516a5.js.map",
+    "static/js/2.ad9a58ad.chunk.js": "/dynamic-web-exercise-two/static/js/2.ad9a58ad.chunk.js",
+    "static/js/2.ad9a58ad.chunk.js.map": "/dynamic-web-exercise-two/static/js/2.ad9a58ad.chunk.js.map",
+    "index.html": "/dynamic-web-exercise-two/index.html",
+    "precache-manifest.6b9b88f9a5eeef37cb2ba76639bd31d0.js": "/dynamic-web-exercise-two/precache-manifest.6b9b88f9a5eeef37cb2ba76639bd31d0.js",
+    "service-worker.js": "/dynamic-web-exercise-two/service-worker.js",
+    "static/css/main.bbccf0c5.chunk.css.map": "/dynamic-web-exercise-two/static/css/main.bbccf0c5.chunk.css.map",
+    "static/js/2.ad9a58ad.chunk.js.LICENSE.txt": "/dynamic-web-exercise-two/static/js/2.ad9a58ad.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.7ac565e3.js",
+    "static/js/runtime-main.a6a516a5.js",
     "static/js/2.ad9a58ad.chunk.js",
     "static/css/main.bbccf0c5.chunk.css",
-    "static/js/main.70db7741.chunk.js"
+    "static/js/main.7d267201.chunk.js"
   ]
 }
